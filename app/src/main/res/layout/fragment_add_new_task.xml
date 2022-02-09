@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <Button
+        android:id="@+id/createNewTaskButton"
+        android:layout_width="286dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="44dp"
+        android:text="Create New Task/Habit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateSelection" />
+
+    <EditText
+        android:id="@+id/editTextNewTask"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="New Task"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCategory"
+        app:layout_constraintStart_toStartOf="@+id/editTextCategory"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextDueDate"-->
+    <!--        android:layout_width="260dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Due Date"-->
+    <!--        android:inputType="date"-->
+    <!--        android:textColor="#000"-->
+    <!--        android:textColorHint="@color/cardview_dark_background"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextNewTask"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/editTextNewTask"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextNewTask" />-->
+
+    <Button
+        android:id="@+id/taskChoiceButton"
+        android:layout_width="112dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="48dp"
+        android:text="New Task"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/habitChoiceButton"
+        android:layout_width="112dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="New Habit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toEndOf="@+id/taskChoiceButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextDueTime"-->
+    <!--        android:layout_width="260dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Due Time"-->
+    <!--        android:inputType="time"-->
+    <!--        android:textColor="#000"-->
+    <!--        android:textColorHint="@color/cardview_dark_background"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextDueDate"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/editTextDueDate"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextDueDate"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <Button
+        android:id="@+id/dateSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="102dp"
+        android:text="Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewTask" />
+
+    <Button
+        android:id="@+id/timeSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewTask" />
+
+    <EditText
+        android:id="@+id/editTextCategory"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Category"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <RadioGroup
+        android:id="@+id/rgTaskType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/taskChoiceButton">
+
+        <RadioButton
+            android:id="@+id/rbOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="1"
+            android:textColor="#000"
+            />
+
+        <RadioButton
+            android:id="@+id/rbTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="2"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/rbThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="3"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/rbFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="4"
+            android:textColor="#000" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="Importance:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskChoiceButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

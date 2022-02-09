@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SolarTask</string>
+    <string name="button_label_toast">Toast</string>
+    <string name="count">COUNT</string>
+    <string name="count_initial_value">0</string>
+    <string name="toast_message">Hello Toast!</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="title_reports">Reports</string>
+    <string name="title_habits">Habits</string>
+    <string name="title_calendar">Calendar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

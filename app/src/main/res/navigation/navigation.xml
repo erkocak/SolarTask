@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/one_time_task">
+
+    <fragment
+        android:id="@+id/tasks"
+        android:name="com.example.solartask.Tasks"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_tasks" />
+    <fragment
+        android:id="@+id/habits"
+        android:name="com.example.solartask.Habits"
+        android:label="fragment_habits"
+        tools:layout="@layout/fragment_habits" />
+    <fragment
+        android:id="@+id/calendar"
+        android:name="com.example.solartask.Calendar"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.solartask.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_aboutUs"
+            app:destination="@id/aboutUs" />
+        <action
+            android:id="@+id/action_settings_to_privacyPolicy"
+            app:destination="@id/privacyPolicy" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.example.solartask.AboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/privacyPolicy"
+        android:name="com.example.solartask.PrivacyPolicy"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/one_time_task"
+        android:name="com.example.solartask.OneTimeTaskReport"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_one_time_task_report" >
+        <action
+            android:id="@+id/action_one_time_task_to_reports"
+            app:destination="@id/reports" />
+    </fragment>
+    <fragment
+        android:id="@+id/reports"
+        android:name="com.example.solartask.Reports"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_reports" >
+        <action
+            android:id="@+id/action_reports_to_one_time_task"
+            app:destination="@id/one_time_task" />
+    </fragment>
+
+</navigation>
